@@ -16,7 +16,7 @@ class Settings:
         """tries to read data from file into environment"""
         dotenv_path = os.path.join(os.getcwd(), ".env")
         if os.path.exists(dotenv_path):
-            load_dotenv(dotenv_path)
+            load_dotenv('.env')
             logging.info("Data from env has been uploaded to environment")
         else:
             logging.warning(
